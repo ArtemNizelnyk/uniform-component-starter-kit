@@ -1,0 +1,80 @@
+{
+  "type": "integration-reference",
+  "displayName": "Integration Reference",
+  "logoIconUrl": "https://uniform.app/loading.gif",
+  "badgeIconUrl": "https://uniform.app/loading.gif",
+  "category": "analytics",
+  "baseLocationUrl": "http://localhost:9000",
+  "locations": {
+    "install": {
+      "description": [
+        "Describe your mesh integration",
+        "Each array element will create a new paragraph on the install dialog.",
+        "<html> is not allowed."
+      ],
+      "informationUrl": "https://yoursite.com/info-about-this-mesh-app"
+    },
+
+    "dataConnectors": [
+      {
+        "type": "reference",
+        "badgeIconUrl": "https://uniform.app/loading.gif",
+        "displayName": "Integration Reference",
+        "dataArchetypes": {
+          "default": {
+            "displayName": "Reference Archetype",
+            "dataEditorUrl": "/reference/dataResource",
+            "typeEditorUrl": "/reference/dataType",
+            "typeEditorLocations": {
+              "teDialog": {
+                "url": "../namedDialog"
+              }
+            },
+            "dataEditorUrlLocations": {
+              "deDialog": {
+                "url": "../namedDialog"
+              }
+            }
+          }
+        },
+        "dataSourceEditorUrl": "/reference/dataSource",
+        "dataSourceEditorLocations": {
+          "dceDialog": {
+            "url": "../namedDialog"
+          }
+        }
+      }
+    ],
+
+    "canvas": {
+      "parameterTypes": [
+        {
+          "type": "reference",
+          "editorUrl": "/reference/paramType",
+          "displayName": "Reference Parameter",
+          "editorLocations": {
+            "ptEdit": {
+              "url": "../namedDialog"
+            }
+          },
+          "configureUrl": "/reference/paramTypeConfig",
+          "configurationLocations": {
+            "ptConfigure": {
+              "url": "../namedDialog"
+            }
+          },
+          "renderableInPropertyPanel": true
+        }
+      ]
+    },
+
+    "settings": {
+      "url": "/reference/settings",
+      "locations": {
+        "settingsDialog": {
+          "url": "../namedDialog"
+        }
+      }
+    }
+  }
+}

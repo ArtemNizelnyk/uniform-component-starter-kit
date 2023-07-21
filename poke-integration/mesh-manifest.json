@@ -1,0 +1,35 @@
+{
+  "type": "poke-integration",
+  "displayName": "poke-integration",
+  "baseLocationUrl": "http://localhost:9000",
+  "locations": {
+    "dataConnectors": [
+      {
+        "type": "playground",
+        "displayName": "Integration Playground",
+        "dataArchetypes": {
+          "default": {
+            "displayName": "Integration Playground",
+            "dataEditorUrl": "/",
+            "typeEditorUrl": "/"
+          }
+        },
+        "dataSourceEditorUrl": "/"
+      }
+    ],
+    "canvas": {
+      "parameterTypes": [
+        {
+          "type": "playground",
+          "editorUrl": "/",
+          "displayName": "Integration Playground",
+          "configureUrl": "/",
+          "renderableInPropertyPanel": true
+        }
+      ]
+    },
+    "settings": {
+      "url": "/"
+    }
+  }
+}
